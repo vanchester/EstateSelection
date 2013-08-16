@@ -18,18 +18,20 @@ EstateSelection
 
 
 Установка
-=========
+---------
 
 1. Установить Phalcon согласно [инструкции](http://docs.phalconphp.com/en/latest/reference/install.html) 
 или воспользоваться хостингом с поддержкой этого фреймворка
 
-2. Клонировать репозиторий в папку web-сервера
+2. Клонировать репозиторий, настроить веб-сервер на папку public
 
-3. Импортировать дамп базы данных из файла data/base.sql
+3. Разрешить web-серверу запись в папки app/cache и public/images 
 
-4. Скопировать файл app/config/config.php.example в app/config/config.php и прописать свои параметры подключения к базе
+4. Импортировать дамп базы данных из файла data/base.sql
 
-5. Добавить закладку в браузер со ссылкой
+5. Скопировать файл app/config/config.php.example в app/config/config.php и прописать свои параметры подключения к базе
+
+6. Добавить закладку в браузер со ссылкой
 
  ```javascript
  javascript:(function(){location.href = 'http://your.domain/index/add?url=' + location.href})()
@@ -40,7 +42,7 @@ EstateSelection
  
 
 Используемые компоненты
-=======================
+-----------------------
 
 * [Phalcon] (http://phalconphp.com)
 
